@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game of Life</title>
+    <script src="./dist/bundle.js" defer></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+            height: 600px;
+            width: 600px;
+            margin: auto;
+        }
+
+        .alive {
+            background: black;
+            border: 1px solid #ccc;
+        }
+
+        .dead {
+            background: white;
+            border: 1px solid #ccc;
+        }
+
+        canvas {
+            border: 1px solid #ccc;
+            display: block;
+            height: 600px;
+            margin: 15px auto;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gol" width="600" height="600"></canvas>
+</body>
+<script>
+    window.addEventListener("load", function() {
+        system = new System(64, 64, window.document);
+        setInterval(() => {system.step()}, 100);
+    });
+</script>
+</html>

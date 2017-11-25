@@ -1,0 +1,12 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Michal Zimmermann <zimmicz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "jasmine": "^2.8.0"
+  },
+  "dependencies": {}
+}
